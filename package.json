@@ -1,0 +1,22 @@
+{
+  "name": "com.dave6.game-state-flow",
+  "version": "0.0.1",
+  "displayName": "Dave Game State Flow",
+  "description": "For gamePlay loop",
+  "unity": "6000.0",
+  "unityRelease": "0",
+  "documentationUrl": "https://github.com/David-63/com.dave6.game-state-flow#readme",
+  "changelogUrl": "https://github.com/David-63/com.dave6.game-state-flow/releases",
+  "licensesUrl": "https://github.com/David-63/com.dave6.game-state-flow/blob/main/LICENSE",
+  "keywords": [
+    "GameManager",
+    "moduler"
+  ],
+  "author": {
+    "name": "David-63",
+    "email": "jiseop.63@gmail.com",
+    "url": "https://github.com/David-63"
+  },
+  "dependencies": {
+  }
+}
