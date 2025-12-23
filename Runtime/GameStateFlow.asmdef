@@ -1,0 +1,14 @@
+{
+    "name": "GameStateFlow",
+    "rootNamespace": "Dave6.GameStateFlow",
+    "references": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
