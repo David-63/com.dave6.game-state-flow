@@ -2,7 +2,7 @@ namespace Dave6.GameStateFlow
 {
     public interface IInteractable
     {
-        void Interact();
+        void Interact(IInteractor interactor);
     }
 
 }

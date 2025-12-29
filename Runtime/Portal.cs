@@ -24,8 +24,13 @@ namespace Dave6.GameStateFlow
         [SerializeField] string m_ConnectId;
         public string connectId => m_ConnectId;
 
-        public void Interact()
+        bool isCunsumed = false;
+
+        public void Interact(IInteractor interactor)
         {
+            if (isCunsumed) return;
+            isCunsumed = true;
+
             SceneDirector.instance.RequestSceneLoad(m_TargetScene, m_ConnectId);
         }
     }

@@ -1,7 +1,6 @@
-## [0.0.1] - 2025.12.23
+## [0.0.2] - 2025.12.30
 
 ### Added
-- Portal 추가
-- GameFlowController 추가
-- SceneDirector 추가
-- PlayerSpawner 추가
+- 상호작용 인터페이스에 `ClearInteractable` 메서드 추가
+- 상호작용 객체의 소모상태를 확인하는 isConsumed 로직 추가 (portal에 적용)
+
