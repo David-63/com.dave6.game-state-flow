@@ -2,28 +2,23 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
+using UnityUtils;
 
 namespace Dave6.GameStateFlow
 {
-    public class SceneDirector : MonoBehaviour
+    public class SceneDirector : SingletonTemplate<SceneDirector>
     {
-        public static SceneDirector instance { get; private set; }
         public event UnityAction<string> onSceneFullyEntered;
         string m_NextSpawnId;
 
-        void Awake()
+        protected override void Awake()
         {
-            if (instance != null && instance != this)
-            {
-                Destroy(gameObject);
-                return;
-            }
-            instance = this;
-            DontDestroyOnLoad(gameObject);
+            base.Awake();
             SceneManager.sceneLoaded += OnSceneLoaded;
         }
-        void OnDestroy()
+        protected override void OnDestroy()
         {
+            base.OnDestroy();
             SceneManager.sceneLoaded -= OnSceneLoaded;
         }
 

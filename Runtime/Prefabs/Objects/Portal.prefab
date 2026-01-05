@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5986299161255784420}
   - component: {fileID: 4137863182631654935}
   - component: {fileID: 4838196448140762280}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Portal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,7 +44,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0

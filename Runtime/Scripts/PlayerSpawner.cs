@@ -1,26 +1,15 @@
 using System;
 using System.Collections;
 using UnityEngine;
+using UnityUtils;
 
 namespace Dave6.GameStateFlow
 {
-    public class PlayerSpawner : MonoBehaviour
+    public class PlayerSpawner : SingletonTemplate<PlayerSpawner>
     {
-        public static PlayerSpawner instance { get; private set; }
         [SerializeField] GameObject m_PlayerPrefab;
         GameObject m_PlayerInstance;
         IEntity m_Player;
-
-        void Awake()
-        {
-            if (instance != null && instance != this)
-            {
-                Destroy(gameObject);
-                return;
-            }
-            instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
 
         void Start()
         {

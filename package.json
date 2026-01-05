@@ -1,6 +1,6 @@
 {
   "name": "com.dave6.game-state-flow",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "displayName": "Dave Game State Flow",
   "description": "For gamePlay loop",
   "unity": "6000.0",
@@ -18,5 +18,6 @@
     "url": "https://github.com/David-63"
   },
   "dependencies": {
+    "com.dave6.unity-utils": "0.0.4"
   }
 }

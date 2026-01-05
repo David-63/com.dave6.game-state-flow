@@ -3,6 +3,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
+using UnityUtils;
 
 namespace Dave6.GameStateFlow
 {
@@ -16,23 +17,17 @@ namespace Dave6.GameStateFlow
     }
 
 
-    public class GameFlowController : MonoBehaviour
+    public class GameFlowController : SingletonTemplate<GameFlowController>
     {
-        public static GameFlowController instance { get; private set; }
         public event UnityAction<eGameState, eGameState> onStateChanged;
         [SerializeField] eGameState m_CurrentState = eGameState.Boot;
         public eGameState gameState => m_CurrentState;
 
-        void Awake()
+        protected override void OnDestroy()
         {
-            if (instance != null && instance != this)
-            {
-                Destroy(gameObject);
-                return;
-            }
-            instance = this;
-            DontDestroyOnLoad(gameObject);
+            base.OnDestroy();
         }
+
         void Start()
         {
             SceneDirector.instance.RequestSceneLoad("Lobby", "LobbyEnter");

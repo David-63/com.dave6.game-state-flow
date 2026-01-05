@@ -1,7 +1,9 @@
 {
     "name": "GameStateFlow",
     "rootNamespace": "Dave6.GameStateFlow",
-    "references": [],
+    "references": [
+        "GUID:afed0d0877f31784d88e20e1da31e6eb"
+    ],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,

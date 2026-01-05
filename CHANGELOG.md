@@ -1,6 +1,5 @@
-## [0.0.2] - 2025.12.30
+## [0.0.3] - 2026.01.05
 
-### Added
-- 상호작용 인터페이스에 `ClearInteractable` 메서드 추가
-- 상호작용 객체의 소모상태를 확인하는 isConsumed 로직 추가 (portal에 적용)
+### Chnaged
+매니저 스크립트를 SingletonTemplate으로 재구성
 
